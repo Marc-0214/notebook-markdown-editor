@@ -53,3 +53,7 @@ One challenge was managing multiple Markdown files while maintaining persistence
 
 ## 7. Optional Deployment
 The project can be deployed using **GitHub Pages** by enabling Pages in the repository settings and selecting the main branch as the source.
+## Optional Deployment
+This project is deployed using GitHub Pages:
+
+[Live Notebook App](https://Marc-0214.github.io/notebook-markdown-editor/)
