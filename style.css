@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Panels */
+.panel {
+  padding: 16px;
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.files {
+  width: 20%;
+  border-right: 1px solid #e0e0e0;
+}
+
+.editor {
+  width: 40%;
+  border-right: 1px solid #e0e0e0;
+}
+
+.preview {
+  width: 40%;
+  background-color: #fafafa;
+}
+
+/* Headings */
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* File list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+li {
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background-color: #f0f2f5;
+}
+
+li.active {
+  background-color: #e3f2fd;
+  font-weight: 600;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Editor */
+textarea {
+  width: 100%;
+  height: calc(100% - 40px);
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+/* Preview markdown styling */
+#preview {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#preview h1,
+#preview h2,
+#preview h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+#preview code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+#preview pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
